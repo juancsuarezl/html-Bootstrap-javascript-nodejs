@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html"/>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Los Platos de la Yaya - Productos</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" 
+		name="viewport">
+		<!--<link rel="stylesheet" href="css/style.css" type="text/css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+    <header>
+
+        <!--BARRA DE NAVEGACION-->
+
+		<nav class="navbar navbar-expand-sm fixed-top" style="background-color: rgb(200, 225, 245);">
+			
+			<ul class="d-flex align-items-center navbar-nav nav-tabs mr-5 ml-4" >
+				
+				<li class="nav-item">
+					<a class="navbar-brand" href="index.html">
+                        <img class="rounded-circle" src="img/logo(small).jpg"  alt="Logotipo"> 
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-danger bg-light active" href="index.html"><h6>Home</h6></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link text-danger bg-light active" href="nosotros.html"><h6>Nosotros</h6></a>
+                </li>
+                
+                <li class="nav-item">
+					<a class="nav-link text-danger bg-light active" href="productos.html"><h6>Productos</h6></a>
+				</li>
+
+
+				<li class="nav-item">
+					<a class="nav-link text-danger bg-light active" href="contactenos.html"><h6>Contáctenos</h6></a>
+                </li>
+                
+                <div class="dropdown pl-3 pr-2">
+					<a class="btn btn-light text-danger" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i  class="fas fa-shopping-cart"></i>
+                    </a>
+
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    
+                        <table id="lista-carrito" class="table">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table> 
+
+                        <a href="#" id="vaciar-carrito" class="btn btn-outline-danger btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-outline-success btn-block">Procesar Compra</a>
+                            
+                    </div>
+				  
+				</div>
+				
+			</ul>
+			
+        </nav>
+        
+    </header>
+
+        <!--FIN BARRA DE NAVEGACION-->
+
+    <main class="mt-5 pt-5">
+
+            <h4 class="text-danger text-center mt-3 mb-6 p-4">AREPAS, EMPANADAS, TEQUEÑOS Y COMBOS</h4>
+
+            <div class="container" id="lista-productos">
+            
+                <div class="card-deck mb-3 text-center">
+                    
+                    <div class="card mb-4 shadow-sm" >
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">AREPA CARNE MECHADA</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/arepa-carne.png" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>150</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="1">
+                                Agregar al Carrito
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">AREPA BONDIOLA</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/bondiola.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>160</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="2">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">AREPA POLLO Y PALTA</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/reinap.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>160</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="3">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="card-deck mb-3 text-center">
+                    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">AREPA JAMÓN Y QUESO</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/jamonyqueso.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>150</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="4">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">AREPA HUEVOS REVUELTOS</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/perico.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>160</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="5">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">DEGUSTACIÓN</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/miniarepas.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>120</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="6">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="card-deck mb-3 text-center">
+                    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">EMPANADA CARNE MECHADA</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/empanadas.png" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>120</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="7">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">EMPANADA CARNE PICADA</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/empanadas.png" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>120</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="8">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">EMPANADA POLLO</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="IMG/empanadas.png" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$ <span>120</span></h5>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="9">Agregar al Carrito</a>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 shadow-sm" >
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">LA YAYA PREMIUM</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/arepa-carne.png" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>360</span></h5>
+                            <ul class= "text-justify" style="list-style: none;">
+                                <li><b>Dos (2) arepas</b></li>
+                                <li><b>Rellenos: Mechada, Pollo y Palta</b></li>
+                                <li><b>Tequeños (6 unidades)</b></li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="10">
+                                Agregar al Carrito
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">LA YAYA Y EL YAYU</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/bondiola.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>640</span></h5>
+                            <ul class= "text-justify" style="list-style: none;">
+                                <li><b>Tres (3) arepas</b></li>
+                                <li><b>Rellenos a elegir</b></li>
+                                <li><b>Tequeños (12 unidades)</b></li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="11">Agregar al Carrito</a>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h5 class="my-0 font-weight-bold">LA YAYA LIGTH</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="img/reinap.jpg" class="card-img-top" style="width:25%">
+                            <h5 class="card-title pricing-card-title precio">$<span>240</span></h5>
+                            <ul class= "text-justify" style="list-style: none;">
+                                <li><b>Una (1) arepa</b></li>
+                                <li><b>Relleno: Pollo y Palta</b></li>
+                                <li><b>Tequeños (6 unidades)</b></li>
+                            </ul>
+                            <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="12">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card-deck mb-3 text-center">
+                    
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 font-weight-bold">TEQUEÑOS 6 UNIDADES</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/tequeños.jpg" class="card-img-top" style="width:25%">
+                                <h5 class="card-title pricing-card-title precio">$<span>120</span></h5>
+                                <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="13">Agregar al Carrito</a>
+                            </div>
+                        </div>
+        
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 font-weight-bold">TEQUEÑOS 12 UNIDADES</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/tequeños.png" class="card-img-top" style="width:25%">
+                                <h5 class="card-title pricing-card-title precio">$<span>230</span></h5>
+                                <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="14">Agregar al Carrito</a>
+                            </div>
+                        </div>
+        
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-header">
+                                <h5 class="my-0 font-weight-bold">TEQUEÑOS CONGELADOS (x 12)</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="img/congelados.jpg" class="card-img-top" style="width:25%">
+                                <h5 class="card-title pricing-card-title precio">$<span>200</span></h5>
+                                <a href="" class="btn btn-block btn-outline-success agregar-carrito" data-id="15">Agregar al Carrito</a>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="container text-center">
+                        <button class="btn btn-outline-primary" role="link" onclick="window.location='compra.html'">Ver Carrito</button>
+                    </div>
+                    
+     </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+    <!--FOOTER-->
+
+		<footer class="container pt-3 pb-3 mt-5 mb-3 text-center">
+
+            <b>&copy; Sitio desarrollado por J&A Soluciones Integrales 2020. Todos los derechos reservados</b>
+
+    </footer>
+
+    <ul class="nav justify-content-center">
+        
+        <li class="nav-item ml-sm-0 mb-2">
+            <a class="nav-link" href="https://www.facebook.com/losplatosdelayaya-112472613863445" target="_blank"><img width=60% src="img/facebook(smallc2).png"></a>
+        </li>
+
+        <li class="nav-item ml-sm-0 mb-2">
+            <a class="nav-link" href="https://instagram.com/losplatosdelayaya?igshid=1mwwbzg3d5e75" target="_blank"><img width=60% src="img/instagram(smallc2).jpg"></a>
+        </li>
+
+        <li class="nav-item ml-sm-0 mb-2">
+            <a class="nav-link" href="http://api.whatsapp.com/send?phone=541158966770" target="_blank"><img width=60% src="img/whatsapp(smallc2).jpg"></a>
+        </li>
+    </ul>
+
+</body>
+
+</html>
+        
+    
